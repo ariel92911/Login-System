@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8 text-center">
+      <h1 class="mt-5 mb-5">Account Login</h1>
+      <form method="POST" action="/">
+        <div class="form-group mb-5" width='500'>
+          <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Email" name="email" value="{{options.email}}">
+        </div>
+        <div class="form-group mb-5" width='500'>
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password"
+            name="password">
+        </div>
+
+        {{#if loginResult}}
+        <div class="alert alert-info mb-5" role="alert">
+          {{loginResult}}
+        </div>
+        {{/if}}
+
+        <button type="submit" class="btn btn-outline-dark">Sign in</button>
+      </form>
+    </div>
+    <div class="col-2">
+
+    </div>
+  </div>
+</div>
